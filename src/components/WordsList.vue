@@ -19,13 +19,19 @@ import { db } from '../plugins/firebase'
 
 export default {
     name: 'WordsList',
+    data() {
+        return {
+            wordsFlag: true
+        }
+    },
     computed: {
         user(){
             return this.$store.state.user
         },
         words() {
             return this.$store.state.words
-        }
+        },
+
     },
     methods: {
         likeWord(word, key) {

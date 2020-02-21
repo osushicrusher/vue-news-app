@@ -3,6 +3,10 @@
         <BtnBox></BtnBox>
         <span @click="confirm()">確認ボタン</span>
         <span>いいねのみ表示する</span>
+        <form class="search-box">
+            <input type="text" name="searchInput" placeholder="keyword"/>
+            <span>search</span>
+        </form>
         <InputBox></InputBox>
         <WordsList></WordsList>
     </div>
@@ -37,9 +41,7 @@ export default {
 
             confirm() {
                 console.log(this.words)
-                console.log(this.user.uid)
-                console.log(this.wordsRef)
-            },
+                console.log(this.user)            },
         }
     }
 
@@ -53,6 +55,10 @@ export default {
     margin: 0 auto;
     padding: 8px;
     width: 90%;
+}
+
+.search-box {
+    text-align: center;
 }
 
 </style>

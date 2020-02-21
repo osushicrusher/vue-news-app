@@ -28,7 +28,7 @@ export default {
     },
     computed: {
         limitedResults() {
-            // resultsが1ページで15記事だけ表示する
+            // resultsが15記事だけ表示する
             return this.results.slice(0, 15)
         }
     }
