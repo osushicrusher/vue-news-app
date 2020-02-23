@@ -56,7 +56,7 @@ export default {
     border-radius: 10px;
     list-style: none;
     margin-top: 18px;
-    overflow: hidden;
+    overflow-wrap: break-word;
 }
 
 .words__list-name {

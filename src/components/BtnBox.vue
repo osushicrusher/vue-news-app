@@ -7,7 +7,7 @@
             <option value="逆アルファベット順">逆アルファベット順</option>
         </select>
         <span class="btn-liked"><font-awesome-icon icon="heart" /></span>
-    </div>    
+    </div>   
 </template>
 
 <script>
