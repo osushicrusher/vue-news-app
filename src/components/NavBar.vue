@@ -1,7 +1,6 @@
 <template>
   <div id="nav" class="nav">
     <router-link to="/" class="router-link">Home</router-link>
-    <router-link to="/NYT" class="router-link">NYT</router-link>
     <router-link to="/Words" class="router-link">Words</router-link>
     <span @click="login()" v-if="!isAuthenticated" class="login-btn">Login</span>
     <img v-if="isAuthenticated" :src="user.photoURL" class="avatar" />
