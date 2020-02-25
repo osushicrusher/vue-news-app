@@ -76,6 +76,7 @@ export default {
   background-color: #fff;
   color: #313131;
   text-decoration: none;
+  padding: 6px;
 }
 
 .login-btn {
