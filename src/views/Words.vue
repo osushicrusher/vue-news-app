@@ -1,12 +1,5 @@
 <template>
     <div class="words">
-        <BtnBox></BtnBox>
-        <span @click="confirm()">確認ボタン</span>
-        <span>いいねのみ表示する</span>
-        <form class="search-box">
-            <input type="text" name="searchInput" placeholder="keyword"/>
-            <span>search</span>
-        </form>
         <InputBox></InputBox>
         <WordsList></WordsList>
     </div>
@@ -14,7 +7,6 @@
 
 <script>
 
-import BtnBox from '../components/BtnBox'
 import InputBox from '../components/InputBox'
 import WordsList from '../components/WordsList'
 
@@ -22,7 +14,6 @@ import WordsList from '../components/WordsList'
 export default {
     name: 'Words',
     components: {
-        BtnBox,
         InputBox,
         WordsList
     },
@@ -36,14 +27,8 @@ export default {
         isAuthenticated() {
             return this.$store.getters.isAuthenticated
         }
-    },
-    methods: {
-
-            confirm() {
-                console.log(this.words)
-                console.log(this.user)            },
-        }
     }
+}
 
 
 </script>
@@ -52,6 +37,7 @@ export default {
 
 
 .words {
+    background-color: aquamarine;
     margin: 0 auto;
     padding: 8px;
     width: 90%;
@@ -59,6 +45,13 @@ export default {
 
 .search-box {
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .words {
+        margin: 30px auto 0 auto;
+        width: 70%;
+    }
 }
 
 </style>

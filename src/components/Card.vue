@@ -28,8 +28,8 @@ export default {
     },
     computed: {
         limitedResults() {
-            // resultsが15記事だけ表示する
-            return this.results.slice(0, 15)
+            // resultsが12記事だけ表示する
+            return this.results.slice(0, 12)
         }
     }
 }
@@ -83,5 +83,10 @@ export default {
     -webkit-line-clamp: 3;
 }
 
+@media screen and (min-width: 768px) {
+    .card {
+        width: 35%;
+    }
+}
 
 </style>

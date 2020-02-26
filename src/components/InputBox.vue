@@ -83,4 +83,11 @@ input[type="text"]:focus {
     margin-top: 20px;
     padding: 6px;
 }
+
+@media screen and (min-width:768px) {
+    .input-box {
+        margin: 0 auto;
+    }
+}
+
 </style>

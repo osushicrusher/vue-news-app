@@ -19,11 +19,6 @@ import { db } from '../plugins/firebase'
 
 export default {
     name: 'WordsList',
-    data() {
-        return {
-            wordsFlag: true
-        }
-    },
     computed: {
         user(){
             return this.$store.state.user
@@ -31,7 +26,6 @@ export default {
         words() {
             return this.$store.state.words
         },
-
     },
     methods: {
         likeWord(word, key) {
@@ -90,4 +84,9 @@ export default {
     background-color: palegoldenrod;
     padding: 10px;
 }
+
+@media screen and (min-width: 768px) {
+
+}
+
 </style>
