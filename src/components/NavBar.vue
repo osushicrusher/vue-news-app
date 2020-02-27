@@ -103,6 +103,12 @@ export default {
 @media screen and (min-width: 768px) {
   .nav {
     font-size: 26px;
+    height: 14vh;
+  }
+
+  .avatar {
+    height: 60px;
+    width: 60px;
   }
 }
 

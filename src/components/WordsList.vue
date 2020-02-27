@@ -7,7 +7,7 @@
                 <font-awesome-icon icon="trash" class="remove-btn" @click="removeWord(key)" />
             </div>
             <div class="words__list-sentence">
-                ・ {{ word.sentence }}
+                {{ word.sentence }}
             </div>  
         </li>
     </ul>
@@ -44,10 +44,6 @@ export default {
 </script>
 
 <style>
-
-.words__lists {
-    background-color: yellow;
-}
 
 .words__list {
     background-color: antiquewhite;

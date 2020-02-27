@@ -37,7 +37,6 @@ export default {
 
 
 .words {
-    background-color: aquamarine;
     margin: 0 auto;
     padding: 14px;
     width: 90%;
