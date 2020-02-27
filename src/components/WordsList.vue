@@ -1,10 +1,10 @@
 <template>
-    <ul>
+    <ul class="words__lists">
         <li v-for="(word, key) in words" :key="key" class="words__list">
             <div class="words__list-name">
                 <span>{{ word.name }}</span>
-                <span class="like-btn" @click="likeWord(word, key)" :class="{ liked: word.isLiked }"><font-awesome-icon icon="heart" /></span>
-                <span class="remove-btn" @click="removeWord(key)"><font-awesome-icon icon="trash" /></span>
+                <font-awesome-icon icon="heart" class="like-btn" @click="likeWord(word, key)" :class="{ liked: word.isLiked }" />
+                <font-awesome-icon icon="trash" class="remove-btn" @click="removeWord(key)" />
             </div>
             <div class="words__list-sentence">
                 ・ {{ word.sentence }}
@@ -44,6 +44,10 @@ export default {
 </script>
 
 <style>
+
+.words__lists {
+    background-color: yellow;
+}
 
 .words__list {
     background-color: antiquewhite;
@@ -86,7 +90,24 @@ export default {
 }
 
 @media screen and (min-width: 768px) {
+    .words__lists {
+        margin: 40px auto 0 auto;
+        width: 90%;
+    }
+}
 
+@media screen and (min-width: 1024px) {
+    .words__lists {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .words__lists {
+        margin: 0;
+        padding: 30px;
+        width: 50%;
+    }
 }
 
 </style>

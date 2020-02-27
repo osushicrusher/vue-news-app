@@ -39,7 +39,7 @@ export default {
 .words {
     background-color: aquamarine;
     margin: 0 auto;
-    padding: 8px;
+    padding: 14px;
     width: 90%;
 }
 
@@ -47,11 +47,13 @@ export default {
     text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
     .words {
-        margin: 30px auto 0 auto;
-        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 30px;
     }
 }
+
 
 </style>
