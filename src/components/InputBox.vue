@@ -57,6 +57,7 @@ export default {
 <style>
 .input-box {
     background-color: #313131;
+    border-radius: 14px;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -69,7 +70,6 @@ input[type="text"] {
     color: #313131;
     border: solid 1px #ccc;
     border-radius: 3px;
-    margin-top: 10px;
 }
 
 input[type="text"]:focus {
@@ -80,13 +80,17 @@ input[type="text"]:focus {
     appearance: none;
     background-color: beige;
     border-radius: 20px;
-    margin-top: 20px;
     padding: 6px;
+}
+
+input[type="text"], .add-btn {
+    margin-top: 20px;
 }
 
 @media screen and (min-width:768px) {
     .input-box {
         margin: 30px auto 0 auto;
+        padding: 30px;
         width: 80%;
     }
 }

@@ -47,7 +47,7 @@ export default {
 
 .words__list {
     background-color: antiquewhite;
-    border-radius: 10px;
+    font-size: 16px;
     list-style: none;
     margin-top: 18px;
     overflow-wrap: break-word;
@@ -56,6 +56,9 @@ export default {
 .words__list-name {
     background-color: cadetblue;
     color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
     padding: 8px;
     position: relative;
 }
@@ -82,19 +85,28 @@ export default {
 
 .words__list-sentence {
     background-color: palegoldenrod;
+    letter-spacing: 1px;
     padding: 10px;
 }
 
 @media screen and (min-width: 768px) {
     .words__lists {
-        margin: 40px auto 0 auto;
+        margin: 50px auto 0 auto;
         width: 90%;
+    }
+
+    .words__list {
+        margin-top: 24px;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .words__lists {
         width: 80%;
+    }
+
+    .words__list {
+        margin-top: 30px;
     }
 }
 
@@ -103,6 +115,10 @@ export default {
         margin: 0;
         padding: 30px;
         width: 50%;
+    }
+
+    .words__list {
+        margin-top: 36px;
     }
 }
 

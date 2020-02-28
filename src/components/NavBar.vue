@@ -1,8 +1,8 @@
 <template>
   <div id="nav" class="nav">
-    <router-link to="/" class="router-link" ontouchstart="">Home</router-link>
-    <router-link to="/Words" class="router-link" ontouchstart="">Words</router-link>
-    <font-awesome-icon icon="sign-in-alt" class="login-btn" ontouchstart="" @click="login()" v-if="!isAuthenticated"/>
+    <router-link to="/" class="router-link">Home</router-link>
+    <router-link to="/Words" class="router-link">Words</router-link>
+    <font-awesome-icon icon="sign-in-alt" class="login-btn" @click="login()" v-if="!isAuthenticated"/>
     <img v-if="isAuthenticated" :src="user.photoURL" class="avatar" />
   </div>
 </template>
@@ -67,14 +67,12 @@ export default {
 }
 
 .router-link {
+  border-radius: 3px;
   color: #fff;
   font-weight: bold;
   text-decoration: none;
-  padding: 2px 4px;
-}
-
-.router-link:hover {
-  border-bottom: 2px solid #fff;
+  padding: 1px 3px;
+  overflow: hidden;
 }
 
 .router-link-exact-active {
@@ -84,9 +82,10 @@ export default {
 }
 
 .login-btn {
+  border-radius: 2px;
   color: #fff;
   font-size: 1.5em;
-  padding: 2px;
+  padding: 3px;
 }
 
 .login-btn:hover {

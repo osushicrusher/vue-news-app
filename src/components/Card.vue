@@ -3,7 +3,6 @@
         <div class="card" v-for="result in limitedResults" :key="result.title">
             <a :href="result.url" class="card__link" target="_blank" ontouchstart="">
                 <h1 class="card__ttl">{{ result.title }}</h1>
-                <p class="card__abs">{{ result.abstract }}</p>
             </a>
         </div>
     </div>
@@ -45,14 +44,17 @@ export default {
 
 .card {
     box-shadow: 0 0 5px rgba(0, 0, 0, .7);
+    display: flex;
+    align-items: center;
     margin: 30px auto 0 auto;
-    padding: 10px; 
+    padding: 10px;
+    min-height: 160px;
     width: 85%;
 }
 
 .card:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, .9);
-    transform: translateY(-10px) scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+    transform: translateY(-6px) scale(1.05);
     transition: all .3s ease;
 }
 
@@ -65,27 +67,36 @@ export default {
     background-color: blanchedalmond;
     font-size: 16px;
     padding: 10px;
-    max-height: 62px;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-}
-
-.card__abs {
-    background-color: violet;
-    font-size: 16px;
-    padding: 10px;
-    max-height: 80px;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
 }
 
 @media screen and (min-width: 768px) {
     .card {
-        width: 35%;
+        min-height: 200px;
+        width: 40%;
+    }
+
+    .card__ttl {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        min-height: 240px;
+    }
+
+    .card__ttl {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card {
+        min-height: 280px;
+    }
+
+    .card__ttl {
+        font-size: 30px;
     }
 }
 
