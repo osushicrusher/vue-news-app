@@ -64,7 +64,7 @@ export default {
 }
 
 .card__ttl {
-    background-color: blanchedalmond;
+    background-color: rgb(252, 224, 183);
     font-size: 16px;
     padding: 10px;
 }

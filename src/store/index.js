@@ -28,10 +28,7 @@ export default new Vuex.Store({
       state.wordsRef.doc(key).delete()
     }
   },
-  actions: {/*
-    setWordsRef(context, ref) {
-      context.commit('setWordsRef', ref)
-    }, */
+  actions: {
     addNewWord(context, act1) {
       context.commit('addNewWord', act1)
     },
